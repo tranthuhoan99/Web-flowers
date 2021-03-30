@@ -116,13 +116,13 @@ if(isset($_GET['action']) && $_GET['action']=="add"){
 				<div class="info-box">
 					<div class="row">
 						<div class="col-xs-2">
-						     <i class="icon fa fa-dollar"></i>
+                            <i style="color: green" class="icon fas fa-check-circle"></i>
 						</div>
 						<div class="col-xs-10">
-							<h4 class="info-box-heading green">money back</h4>
+							<h4 class="info-box-heading green">Quality assurance</h4>
 						</div>
 					</div>	
-					<h6 class="text">30 Day Money Back Guarantee.</h6>
+					<h6 class="text">If you don't like the bouquet, we will change it.</h6>
 				</div>
 			</div><!-- .col -->
 

@@ -223,8 +223,9 @@ $num=mysqli_num_rows($rt);
 				                  <div class="arrow plus gradient"><span class="ir"><i class="icon fa fa-sort-asc"></i></span></div>
 				                  <div class="arrow minus gradient"><span class="ir"><i class="icon fa fa-sort-desc"></i></span></div>
 				                </div>
-				             <input type="text" value="<?php echo $_SESSION['cart'][$row['id']]['quantity']; ?>" name="quantity[<?php echo $row['id']; ?>]">
-				             
+				             <input type="text" id="product1" value="<?php echo $_SESSION['cart'][$row['id']]['quantity']; ?>" name="quantity[<?php echo $row['id']; ?>]">
+
+
 			              </div>
 		            </td>
 					<td class="cart-product-sub-total"><span class="cart-sub-total-price"><?php echo ""." ".$row['productPrice']; ?>.00 Rub</span></td>

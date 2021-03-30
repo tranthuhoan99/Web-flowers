@@ -8,7 +8,7 @@ if(isset($_POST['submit']))
 $name=$_POST['fullname'];
 $email=$_POST['emailid'];
 $contactno=$_POST['contactno'];
-$password=md5($_POST['password']);
+$password=$_POST['password'];
 $query=mysqli_query($con,"insert into users(name,email,contactno,password) values('$name','$email','$contactno','$password')");
 if($query)
 {
@@ -22,7 +22,7 @@ echo "<script>alert('Not register something went worng');</script>";
 if(isset($_POST['login']))
 {
    $email=$_POST['email'];
-   $password=md5($_POST['password']);
+   $password=$_POST['password'];
 $query=mysqli_query($con,"SELECT * FROM users WHERE email='$email' and password='$password'");
 $num=mysqli_fetch_array($query);
 if($num>0)
